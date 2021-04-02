@@ -1,0 +1,64 @@
+Determining if the log exist failed with the following output:
+Change Dir: /home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_795ef/fast && /usr/bin/make -f CMakeFiles/cmTC_795ef.dir/build.make CMakeFiles/cmTC_795ef.dir/build
+make[1]: Entering directory '/home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_795ef.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_795ef.dir/CheckSymbolExists.c.o   -c "/home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_795ef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_795ef.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_795ef.dir/CheckSymbolExists.c.o  -o cmTC_795ef 
+/usr/bin/ld: CMakeFiles/cmTC_795ef.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `log'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_795ef.dir/build.make:87: cmTC_795ef] Error 1
+make[1]: Leaving directory '/home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_795ef/fast] Error 2
+
+
+File /home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef log
+  return ((int*)(&log))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the exp exist failed with the following output:
+Change Dir: /home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_de058/fast && /usr/bin/make -f CMakeFiles/cmTC_de058.dir/build.make CMakeFiles/cmTC_de058.dir/build
+make[1]: Entering directory '/home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_de058.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_de058.dir/CheckSymbolExists.c.o   -c "/home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_de058
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de058.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_de058.dir/CheckSymbolExists.c.o  -o cmTC_de058 
+/usr/bin/ld: CMakeFiles/cmTC_de058.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `exp'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_de058.dir/build.make:87: cmTC_de058] Error 1
+make[1]: Leaving directory '/home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_de058/fast] Error 2
+
+
+File /home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef exp
+  return ((int*)(&exp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
