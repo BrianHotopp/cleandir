@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/MathFunctions/MathFunctions.h
+
+/home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/MathFunctions/mysqrt.cxx
+cmath
+-
+iostream
+-
+MathFunctions.h
+/home/hotopb/Dropbox/Spring 2021/Open Source Software/labs/dump/lab07/help/cmake-tests/MathFunctions/MathFunctions.h
+
